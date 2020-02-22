@@ -1,0 +1,47 @@
+.h1 {
+    @include textExtraLarge;
+    color: $white;
+}
+
+.h2 {
+    @include textLarge;
+    color: $black;
+}
+
+.h2_white {
+    color: $white;
+}
+
+.headingBlackText {
+    @include textSmallMedium;
+    color: $black;
+}
+
+.width-content {
+    max-width: 1110px;
+    width: 100vw;
+}
+
+@media screen and (max-width: 1140px) {
+    .width-content {
+        max-width: 738px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .width-content {
+        max-width: 610px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .width-content {
+        max-width: 345px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .width-content {
+        max-width: 290px;
+    }
+}

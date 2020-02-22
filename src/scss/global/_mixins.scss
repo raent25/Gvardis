@@ -1,0 +1,85 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center_sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin padding {
+    padding: 0px 15px 0px 15px;
+}
+
+//
+@mixin textExtraLarge {
+    font-family: $lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $fs72;
+    line-height: $lh86;
+}
+
+@mixin textLarge {
+    font-family: $lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fs36;
+    line-height: $lh43;
+}
+
+@mixin textExtraMedium {
+    font-family: $lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fs24;
+    line-height: $lh36;
+}
+
+@mixin textSmallMedium {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $fs18;
+    line-height: $lh22;
+}
+
+@mixin textSmall_lh17 {
+    font-size: $fs14;
+    line-height: $lh17;
+    font-family: $lato;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@mixin textSmall_lh20 {
+    font-family: $lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fs14;
+    line-height: $lh20;
+}
+
+@mixin textExtraSmall_lh18 {
+    font-family: $lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fs12;
+    line-height: $lh18;
+}
+
+@mixin textExtraSmall_lh14 {
+    font-family: $lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fs12;
+    line-height: $lh14;
+}
+
+@mixin ph-text {
+    font-family: $lato;
+    font-weight: normal;
+    font-size: $fs16;
+}

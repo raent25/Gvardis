@@ -1,16 +1,40 @@
+$vw100: 100%;
 /// colors
-
+$red: #902510;
+$darkRed: #4e0f05;
+$white: #d1cca9;
+$black: #000;
 /// font-family
-
-
+$fontStyle: "arial",
+sans-serif;
+$lato: "Lato",
+$fontStyle;
+//
 $DINPro: "DINPro";
 $DINPro-Black: "DINPro-Black";
 $DINPro-Bold: "DINPro-Bold";
 $DINPro-Light: "DINPro-Light";
 $Material-Design-Iconic-Font: "Material-Design-Iconic-Font";
-
-
-/// font-size
-
-/// line-height
-
+//font-size
+$fs72: 7.2rem;
+$fs55: 5.5rem;
+$fs36: 3.6rem;
+$fs32: 3.2rem;
+$fs24: 2.4rem; //150%
+$fs18: 1.8rem;
+$fs16: 1.6rem;
+$fs14: 1.4rem;
+$fs12: 1.2rem;
+//line-hight
+$lh86: 8.6rem;
+$lh43: 4.3rem;
+$lh36: 3.6rem;
+$lh26: 2.6rem; //160%
+$lh24: 2.4rem; //150%
+$lh22: 2.2rem; //140%
+$lh20: 2rem;
+$lh19: 1.9rem;
+$lh18: 1.8rem;
+$lh17: 1.7rem;
+$lh14: 1.4rem;
+//тип шрифта

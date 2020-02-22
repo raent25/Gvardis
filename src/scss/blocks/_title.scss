@@ -1,0 +1,8 @@
+.title {
+    &-page {
+        width: $vw100;
+        height: 100vh;
+        background-image: linear-gradient($red, $darkRed);
+        @include center;
+    }
+}
