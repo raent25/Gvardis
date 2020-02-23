@@ -2,7 +2,16 @@
     &-page {
         width: $vw100;
         height: 100vh;
-        background-image: linear-gradient($red, $darkRed);
+        background: linear-gradient(90deg, rgba(144, 37, 16, 0.6) 0%, rgba(78, 15, 5, 0.9) 100%);
         @include center;
+        z-index: 1;
+    }
+    &-bg {
+        width: $vw100;
+        height: 100vh;
+        position: absolute;
+        background-image: url(/img/bi.jpg);
+        background-size: cover;
+        z-index: 0;
     }
 }

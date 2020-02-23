@@ -1,8 +1,8 @@
 .header {
     position: absolute;
     width: $vw100;
-    height: 70px;
-    background-image: linear-gradient($red, $darkRed);
+    height: 50px;
+    background-color: $darkRed;
     @include padding;
     @include center;
     z-index: 100;
@@ -10,11 +10,11 @@
 
 .nav {
     position: absolute;
-    height: 100px;
+    height: 50px;
     @include center_sb;
     &__link {
         width: 100%;
-        height: 70px;
+        height: 50px;
         color: $white;
         @include textSmallMedium;
         @include center;
