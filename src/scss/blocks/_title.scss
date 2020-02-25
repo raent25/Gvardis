@@ -2,16 +2,37 @@
     &-page {
         width: $vw100;
         height: 100vh;
-        background: linear-gradient(90deg, rgba(144, 37, 16, 0.6) 0%, rgba(78, 15, 5, 0.9) 100%);
-        @include center;
+        background-color: rgba($color: #000000, $alpha: 0.96);
         z-index: 1;
+        @include padding;
+        @include center;
     }
     &-bg {
-        width: $vw100;
-        height: 100vh;
+        z-index: 0;
         position: absolute;
         background-image: url(/img/bi.jpg);
         background-size: cover;
-        z-index: 0;
+        width: $vw100;
+        height: 100vh;
+    }
+}
+
+.tovGvardis {
+    padding-top: 50px;
+    height: 100vh;
+    @include center_sb;
+    &__logo {
+        width: 300px;
+        min-width: 300px;
+        max-width: 300px;
+        @include center;
+    }
+    &__text {
+        color: $white;
+        @include textExtraMedium;
+        &-red {
+            color: $red;
+            @include textLarge;
+        }
     }
 }

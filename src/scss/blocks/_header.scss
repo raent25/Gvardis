@@ -2,7 +2,7 @@
     position: absolute;
     width: $vw100;
     height: 50px;
-    background-color: $darkRed;
+    background-color: $black;
     @include padding;
     @include center;
     z-index: 100;
@@ -19,8 +19,9 @@
         @include textSmallMedium;
         @include center;
         &:hover {
-            background-color: #ccc;
-            color: $black;
+            background-color: $white;
+            color: $red;
+            font-weight: 580;
         }
     }
 }
