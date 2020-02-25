@@ -1,0 +1,23 @@
+.price {
+    @include page;
+    @include padding;
+    @include center_column;
+    background-color: $black;
+}
+
+.service {
+    width: 100%;
+    min-height: 300px;
+    background-color: #111;
+    @include center_sb;
+    @include padding;
+    &__img {
+        width: 250px;
+        height: 250px;
+        background-color: #0a0a0a;
+    }
+    &__icon {
+        width: 250px;
+        height: auto;
+    }
+}

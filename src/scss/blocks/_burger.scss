@@ -1,0 +1,124 @@
+.burger-menu {
+    position: absolute;
+    &__button {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: $white;
+        @include center();
+        display: none;
+        z-index: 1000;
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+    &__line,
+    &__line::before,
+    &__line::after {
+        position: relative;
+        width: 10px;
+        height: 2px;
+        background-color: $red;
+        border-radius: 30%;
+        display: block;
+        transition: top 0.2s linear 0.2s, transform 0.2s ease-in;
+    }
+    &__line {
+        transform: translateX(-2px);
+        &::before,
+        &::after {
+            position: absolute;
+            width: 15px;
+            left: 0;
+            top: -5px;
+            content: "";
+            transform: translateX(0px);
+        }
+        &::after {
+            top: 5px;
+        }
+    }
+    &__line.burger-menu-active {
+        background-color: transparent;
+        &::before {
+            transform: rotate(45deg);
+            top: 0;
+            background: $red;
+            transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        }
+        &::after {
+            transform: rotate(-45deg);
+            top: 0;
+            background: $red;
+            transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        }
+    }
+    &__nav {
+        top: 0;
+        padding-top: 80px;
+        position: fixed;
+        z-index: 20;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100%;
+        background: $red;
+        overflow-y: auto;
+        left: 150%;
+        transition: all 0.5s;
+        &.burger-menu-active {
+            left: 35%;
+            transition: all 0.5s;
+        }
+    }
+    &__link {
+        display: block;
+        width: 100vw;
+        padding: 30px;
+        @include textLarge;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bold;
+        color: $white;
+        &:hover {
+            filter: brightness(0.5);
+            background-color: #444;
+        }
+    }
+    &__overley {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        &.burger-menu-active {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .burger-menu__link {
+        @include textSmallMedium;
+    }
+}
+
+@media screen and (max-height: 560px) {
+    .burger-menu__link {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-height: 430px) {
+    .burger-menu__link {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-height: 380px) {
+    .burger-menu__link {
+        @include textSmallMedium;
+        padding: 5px;
+    }
+}

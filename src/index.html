@@ -10,7 +10,9 @@
 
 <body>
     <header class="header">
+        <div class="header__tel">+38(063)-000-00-00</div>
         <nav class="nav width-content">
+            <a href="#title" class="nav__link">Початок</a>
             <a href="#" class="nav__link">Послуги</a>
             <a href="#" class="nav__link">Про компанію</a>
             <a href="#" class="nav__link">Фото</a>
@@ -18,18 +20,60 @@
             <a href="#" class="nav__link">Зворотній зв'язок</a>
             <a href="#" class="nav__link">Контакти</a>
         </nav>
+        <div class="burger-menu">
+            <a class="burger-menu__button" id="button">
+                <span class="burger-menu__line"> </span>
+            </a>
+            <nav class="burger-menu__nav">
+                <a href="#title" class="burger-menu__link">Початок</a>
+                <a href="#price" class="burger-menu__link">Послуги</a>
+                <a href="#info" class="burger-menu__link">Про компанію</a>
+                <a href="#gallery" class="burger-menu__link">Фото</a>
+                <a href="# " class="burger-menu__link">Рекомендації</a>
+                <a href="# " class="burger-menu__link">Зворотній зв'язок</a>
+                <a href="# " class="burger-menu__link">Контакти</a>
+            </nav>
+            <div class="burger-menu__overley" id="overley"></div>
+        </div>
     </header>
     <main>
-        <div class="title-bg"></div>
-        <div class="title-page" id="title">
-            <div class="tovGvardis width-content">
-                <div class=" tovGvardis__logo"><img src="img/logo.svg" class="logo" alt=""></div>
-                <p class="tovGvardis__text"><span class="tovGvardis__text-red">ТОВ «Гвардис»</span> - охоронна компанія надає весь спектр послуг в сфері охорони і забеспечення безпеки. Ми пропонуємо физичну охорону і комплекс мір по забеспеченню безпеки об'єктів будьякого призначення
-                    – приватного житла, офісу, виробничих потужностей, громацького заходу. Ми попіклуємося про Ваш спокій та благополучча Вашого бізнесу.
-                </p>
+        <div class="title-bg">
+            <div class="title-page" id="title">
+                <div class="tovGvardis width-content">
+                    <div class=" tovGvardis__logo"><img src="img/logo.svg" class="logo" alt=""></div>
+                    <div>
+                        <p class="tovGvardis__text"><span class="tovGvardis__text-red">ТОВ «Гвардис»</span> - охоронна компанія надає весь спектр послуг в сфері охорони і забеспечення безпеки. Ми пропонуємо физичну охорону і комплекс мір по забеспеченню безпеки об'єктів будьякого
+                            призначення – приватного житла, офісу, виробничих потужностей, громацького заходу. Ми попіклуємося про Ваш спокій та благополучча Вашого бізнесу.
+                        </p>
+                        <a href="#" class="btnRed">Зв'язатися</a>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!--end title -->
+        <!-- price -->
+        <div class="price" id="price">
+            <div class="price-wrap width-content">
+
+                <div class="service">
+                    <div class="service__img">
+                        <img src="/img/security.svg" class="service__icon" alt=""></div>
+
+                    <div class="service__description">
+                        <h2 class="service__header"></h2>
+                        <p class="service__text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end price -->
+        <!-- info -->
+        <div class="info" id="info"></div>
+        <!--end info -->
+        <!-- gallery -->
+        <div class="gallery" id="gallery"></div>
+        <!--end gallery -->
     </main>
     <footer></footer>
 </body>

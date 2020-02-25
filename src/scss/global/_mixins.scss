@@ -1,6 +1,18 @@
+@mixin page {
+    width: $vw100;
+    min-height: 100vh;
+}
+
 @mixin center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+@mixin center_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -11,7 +23,7 @@
 }
 
 @mixin padding {
-    padding: 0px 15px 0px 15px;
+    padding: 10px 15px 10px 15px;
 }
 
 //

@@ -1,0 +1,10 @@
+.btnRed {
+    min-width: 100px;
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    background-color: $red;
+    color: $white;
+    @include textSmallMedium;
+    @include center;
+}
