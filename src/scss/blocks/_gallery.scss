@@ -1,4 +1,6 @@
 .gallery {
     @include page;
-    background-color: $darkRed;
+    @include center;
+    background-color: $white;
+    min-height: auto;
 }

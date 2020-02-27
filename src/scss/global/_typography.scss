@@ -6,6 +6,7 @@
 .h2 {
     @include textLarge;
     color: $black;
+    text-transform: uppercase;
 }
 
 .h2_white {

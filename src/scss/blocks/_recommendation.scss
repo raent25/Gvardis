@@ -1,0 +1,19 @@
+.recommendation {
+    @include page;
+    background-color: $grey;
+    display: none;
+    &-wrap {
+        @include center_sb;
+        flex-wrap: wrap;
+    }
+}
+
+.gratitude {
+    width: 210px;
+    height: auto;
+    padding: 10px 5px 10px 5px;
+    @include center;
+    &__img {
+        width: 200px;
+    }
+}

@@ -1,23 +1,42 @@
 .price {
     @include page;
-    @include padding;
     @include center_column;
     background-color: $black;
+    &-wrap {
+        flex-wrap: wrap;
+        @include center;
+    }
 }
 
 .service {
     width: 100%;
     min-height: 300px;
-    background-color: #111;
+    margin: 10px 0 10px 0;
+    background-color: $grey;
     @include center_sb;
     @include padding;
     &__img {
         width: 250px;
         height: 250px;
-        background-color: #0a0a0a;
+        background-color: $greyDark;
     }
     &__icon {
         width: 250px;
         height: auto;
+    }
+    &__description {
+        @include center_column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 25px;
+        min-height: 250px;
+    }
+    &__header {
+        @include textExtraMedium;
+        color: $red;
+    }
+    &__text {
+        @include textSmall_lh20;
+        color: $white;
     }
 }

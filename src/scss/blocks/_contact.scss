@@ -1,0 +1,33 @@
+.contact {
+    @include page;
+    @include center;
+    background-color: $black;
+    min-height: 400px;
+    &-wrap {
+        @include center_column;
+    }
+}
+
+.info-page {
+    @include center_sb;
+    padding: 50px 0 0 0;
+    flex-wrap: wrap;
+}
+
+.info-block {
+    @include center_column;
+    width: 300px;
+    min-height: 150px;
+    background-color: $grey;
+    padding: 35px 0 35px 0;
+    margin: 10px;
+    &__title {
+        @include textSmall_lh20;
+        color: $white;
+    }
+    &__info {
+        @include textExtraSmall_lh18;
+        text-decoration: none;
+        color: $white;
+    }
+}

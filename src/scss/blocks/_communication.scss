@@ -1,0 +1,31 @@
+.communication {
+    @include page;
+    @include center;
+    &-wrap {
+        @include center;
+    }
+}
+
+.feedback {
+    width: 550px;
+    height: 480px;
+    background-color: $white;
+    padding: 25px 0 25px 0;
+    @include center;
+    flex-wrap: wrap;
+    border: 1px solid $red;
+    &__header {
+        color: $red;
+    }
+    &__input {
+        width: 450px;
+        height: 40px;
+        border: 1px solid $red;
+        @include placeholder;
+    }
+    &__textarea {
+        width: 448px;
+        border: 1px solid $red;
+        @include placeholder;
+    }
+}

@@ -3,7 +3,6 @@
         @include page;
         background: linear-gradient(135deg, rgba(78, 15, 5, 0.95), rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.98));
         z-index: 1;
-        @include padding;
         @include center;
         overflow: hidden;
     }
@@ -11,7 +10,9 @@
         z-index: 0;
         background-image: url(/img/bi.jpg);
         background-size: cover;
-        @include page;
+        width: $vw100;
+        min-height: 100vh;
+        overflow: hidden;
     }
 }
 
@@ -31,5 +32,8 @@
             color: $red;
             @include textLarge;
         }
+    }
+    &__btn {
+        margin-top: 25px;
     }
 }

@@ -1,4 +1,16 @@
 .info {
     @include page;
-    background-color: $white;
+    min-height: 400px;
+    @include center;
+    background-color: $redDark;
+    &-wrap {
+        @include center;
+        height: 400px;
+        flex-wrap: wrap;
+    }
+    &__text {
+        @include textSmallMedium;
+        padding: 50px 0 50px 0;
+        color: $white;
+    }
 }
