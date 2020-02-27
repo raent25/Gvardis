@@ -53,37 +53,6 @@
             transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
         }
     }
-    &__nav {
-        top: 0;
-        padding-top: 80px;
-        position: fixed;
-        z-index: 20;
-        display: flex;
-        flex-flow: column nowrap;
-        height: 100%;
-        background: $red;
-        overflow-y: auto;
-        left: 150%;
-        transition: all 0.5s;
-        &.burger-menu-active {
-            left: 35%;
-            transition: all 0.5s;
-        }
-    }
-    &__link {
-        display: block;
-        width: 100vw;
-        padding: 30px;
-        @include textLarge;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        font-weight: bold;
-        color: $white;
-        &:hover {
-            filter: brightness(0.5);
-            background-color: #444;
-        }
-    }
     &__overley {
         display: none;
         position: fixed;
@@ -95,30 +64,5 @@
         &.burger-menu-active {
             display: block;
         }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .burger-menu__link {
-        @include textSmallMedium;
-    }
-}
-
-@media screen and (max-height: 560px) {
-    .burger-menu__link {
-        padding: 15px;
-    }
-}
-
-@media screen and (max-height: 430px) {
-    .burger-menu__link {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-height: 380px) {
-    .burger-menu__link {
-        @include textSmallMedium;
-        padding: 5px;
     }
 }

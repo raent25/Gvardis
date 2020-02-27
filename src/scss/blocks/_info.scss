@@ -5,7 +5,7 @@
     background-color: $redDark;
     &-wrap {
         @include center;
-        height: 400px;
+        min-height: 400px;
         flex-wrap: wrap;
     }
     &__text {

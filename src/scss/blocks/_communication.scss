@@ -29,3 +29,16 @@
         @include placeholder;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .feedback {
+        width: 290px;
+        height: 550px;
+        &__input {
+            width: 270px;
+        }
+        &__textarea {
+            width: 268px;
+        }
+    }
+}

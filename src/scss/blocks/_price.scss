@@ -28,7 +28,7 @@
         @include center_column;
         align-items: flex-start;
         width: 100%;
-        padding: 25px;
+        padding: 25px 0 25px 25px;
         min-height: 250px;
     }
     &__header {
@@ -38,5 +38,16 @@
     &__text {
         @include textSmall_lh20;
         color: $white;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .service {
+        flex-wrap: wrap;
+        @include center;
+        &__description {
+            width: 250px;
+            padding: 25px 0 0 0;
+        }
     }
 }

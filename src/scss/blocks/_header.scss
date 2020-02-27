@@ -5,6 +5,7 @@
     background-color: rgba($color: #000000, $alpha: 0.9);
     @include center;
     z-index: 100;
+    padding: 0 15px 0 15px;
 }
 
 .header__tel {
@@ -34,7 +35,39 @@
 
 @media screen and (max-width: 1140px) {
     .nav {
-        display: none;
+        width: 100vw;
+        top: 0;
+        padding-top: 80px;
+        position: fixed;
+        z-index: 20;
+        display: flex;
+        flex-flow: column nowrap;
+        min-height: 100%;
+        background: $red;
+        overflow-y: auto;
+        left: 150%;
+        transition: all 0.5s;
+        @include center;
+        &.burger-menu-active {
+            left: 50%;
+            transition: all 0.5s;
+        }
+        &__link {
+            display: block;
+            @include textLarge;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: bold;
+            color: $white;
+            padding: 5px 0 0 0;
+            min-height: 50px;
+            height: auto;
+            &:hover {
+                filter: brightness(0.5);
+                background-color: #444;
+                color: $white;
+            }
+        }
     }
     #button {
         display: flex;
@@ -46,6 +79,30 @@
         @include center_sb;
         &__tel {
             display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        &.burger-menu-active {
+            left: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .nav {
+        &.burger-menu-active {
+            left: 0%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav {
+        &__link {
+            @include textSmallMedium;
         }
     }
 }

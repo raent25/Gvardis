@@ -1,6 +1,6 @@
 import $ from 'jquery'
 $(document).ready(function() {
-    $("body").on("click", "a", function(event) {
+    $("#nav, .btnRed").on("click", "a", function(event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
