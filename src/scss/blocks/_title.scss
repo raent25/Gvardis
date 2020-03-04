@@ -1,7 +1,7 @@
 .title {
     &-page {
         @include page;
-        background: linear-gradient(135deg, rgba(78, 15, 5, 0.95), rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.98));
+        background: linear-gradient(135deg, rgba(216, 46, 12, 0.93), rgba(78, 15, 5, 0.98));
         z-index: 1;
         @include center;
         overflow: hidden;
@@ -20,9 +20,9 @@
     padding-top: 50px;
     @include center_sb;
     &__logo {
-        width: 300px;
-        min-width: 300px;
-        max-width: 300px;
+        width: 350px;
+        min-width: 350px;
+        max-width: 350px;
         @include center;
     }
     &__info {
@@ -32,12 +32,13 @@
         color: $white;
         @include textExtraMedium;
         &-red {
-            color: $red;
+            color: $white;
             @include textLarge;
         }
     }
     &__btn {
         margin-top: 25px;
+        background-color: $darkRed;
     }
 }
 
