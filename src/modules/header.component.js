@@ -98,7 +98,7 @@ $(document).ready(function() {
                     $('#result').html(' ');
                     $('#result').removeClass('feedback__result-green');
                     $('#result').removeClass('feedback__result-red');
-                }, 5000);
+                }, 10000);
             }
         });
     });

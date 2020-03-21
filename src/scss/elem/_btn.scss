@@ -8,3 +8,14 @@
     @include textSmallMedium;
     @include center;
 }
+
+.btnError {
+    min-width: 100px;
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    background-color: $white;
+    color: $red;
+    @include textSmallMedium;
+    @include center;
+}

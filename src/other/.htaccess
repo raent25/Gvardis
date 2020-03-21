@@ -1,0 +1,7 @@
+# установка кодування
+AddDefaultCharset utf-8
+# заборона лістингу каталогу
+Options -Indexes
+# переадресація на сторінки помилок
+ErrorDocument 404 https://gvardis.kiev.ua/error404.html
+ErrorDocument 403 https://gvardis.kiev.ua/error403.html
